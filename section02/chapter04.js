@@ -20,7 +20,7 @@ let obj2 = {
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function funcA(p1, p2, p3) {
-  // console.log(p1, p2, p3)
+  console.log(p1, p2, p3)
 }
 
 funcA(...arr1)
