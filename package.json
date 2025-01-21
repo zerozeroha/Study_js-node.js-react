@@ -1,0 +1,23 @@
+{
+  "name": "onebite-react-v2",
+  "version": "1.0.0",
+  "description": "## 섹션별 코드",
+  "homepage": "https://github.com/zerozeroha/Study_js-node.js-react#readme",
+  "bugs": {
+    "url": "https://github.com/zerozeroha/Study_js-node.js-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerozeroha/Study_js-node.js-react.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "randomcolor": "^0.6.2"
+  }
+}

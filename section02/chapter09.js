@@ -21,6 +21,7 @@ let arr1 = [{
 const tennisPeople = arr1.filter(
   (item) => item.hobby === "테니스"
 )
+
 // console.log(tennisPeople)
 
 // 2. map
@@ -84,8 +85,8 @@ arr3.sort((a, b) => {
 // 정렬된 새로운 배열을 반환하는 메서드
 let arr5 = ["c", "a", "b"]
 const sorted = arr5.toSorted()
-// console.log(arr5) -> 정렬 x 원본
-// console.log(sorted) -> 정렬된 새로운 배열
+console.log(arr5) //-> 정렬 x 원본
+console.log(sorted) //-> 정렬된 새로운 배열
 
 // 5. join
 // 배열의 모든 요소를 하나의 문자열로 합쳐서 반환하는 그런 메서드
