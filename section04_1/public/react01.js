@@ -49,8 +49,9 @@
 
 // CSS -> CSSOM(:요소들의 스타일과 관련된 모든 정보)
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function onClick() {
-  const $ul = document.getElementById("ul")
+  const $ul = document.getElementById('ul')
   for (let i = 0; i < 3000; i++) {
     $ul.innerHTML += `<li>${i}</li>`
   }
@@ -59,8 +60,8 @@ function onClick() {
 // 3000번 dom을 수정 (과도한 수정 -> 성능악화)
 
 function onClick() {
-  const $ul = document.getElementById("ul")
-  let list = ""
+  const $ul = document.getElementById('ul')
+  let list = ''
 
   for (let i = 0; i < 3000; i++) {
     list += `<li>${i}</li>`
@@ -71,12 +72,11 @@ function onClick() {
 
 // dom은 딱 한번만 수정함. (성능 좋아짐)
 
-다양한 업데이트 - > 동시에 발생한 업데이트를 모음 - > 다 모였다면 한 번에 수정 - > DOM
-서비스의 규모가 커질수록 점점 힘들어짐.
-react는 이 과정을 자동으로 해줌(feat.Virtual DOM)
+// 다양한 업데이트 -> 동시에 발생한 업데이트를 모음 -> 다 모였다면 한 번에 수정 -> DOM
+// 서비스의 규모가 커질수록 점점 힘들어짐.
+// react는 이 과정을 자동으로 해줌 (feat. Virtual DOM)
 
-Virtual DOM이란 ?
-  :
-  DOM을 자바스크립트 객체로 흉내낸 것으로 일종의 복제판이라고 생각하면 된다. -
-  react는 업데이트가 발생하면 실제 DOM을 수정하기 전에 이 가상의 복제판 DOM에 먼저 반영해본다. -
-  연습 스윙 같은 느낌.(Actual DOM - > Virtual DOM)
+// Virtual DOM이란 ?
+// : DOM을 자바스크립트 객체로 흉내낸 것으로 일종의 복제판이라고 생각하면 된다.
+// - react는 업데이트가 발생하면 실제 DOM을 수정하기 전에 이 가상의 복제판 DOM에 먼저 반영해본다.
+// - 연습 스윙 같은 느낌.(Actual DOM -> Virtual DOM)
